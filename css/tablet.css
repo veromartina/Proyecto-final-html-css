@@ -134,3 +134,10 @@ padding: 20px;
 .tarjetas_hacemos{
    margin-left: 70px;
 }
+
+/************UBICACION.HTML************/
+/***************************************/
+
+.nuestra_ubicacion iframe{
+  padding: 40px;
+}

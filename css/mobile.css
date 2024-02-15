@@ -38,7 +38,6 @@ body{
 }
 
 .logo img{
-    position: center;
     position: relative;
     width: 60%;
   
@@ -626,7 +625,7 @@ font-size: 2rem;
   background-repeat: no-repeat;
 }
 
-.item_software h3, .item_responsive h3, .item_seo h3, .item_objetivo h3, .item_metodologia h3, .item_desarrollo h3, .item_mantenimiento h3{
+.item_software h3, .item_responsive h3, .item_seo h3, .item_objetivo h3, .item_metodologia h3, .item_desarrollo h3, .item_mantenimiento h3, .nuestra_ubicacion h3{ 
   height:30px;
   font-size: 1.5rem;
   color:#041665;
@@ -714,3 +713,21 @@ font-size: 2rem;
   margin-left: 30px;
   
 }  
+
+
+/*********************UBICACION.HTML*************/
+
+.nuestra_ubicacion {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.nuestra_ubicacion iframe{
+  padding: 40px;
+}
