@@ -1,0 +1,716 @@
+*{
+  scroll-behavior: smooth; /* transicion suave*/
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+
+/* header*/
+/*imagen generada con leonardo IA*/
+
+body{
+  background-color: #e8e8e8c5;
+  width: 100%;
+
+}
+
+.hero{
+  width: 100%;
+  max-width: 1280vw;
+  height: 180vh;
+  background-image: linear-gradient(45deg, #85ffbe75 0%, #fffb7d6a 100%)
+  , url(../assets/imagenes/trabajando.jpg);
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+  position:relative;
+}
+
+/*header logo*/
+
+.logo{
+  width: 50%;
+  height: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.logo img{
+    position: center;
+    position: relative;
+    width: 60%;
+  
+}
+
+/*header- nav*/
+
+#menu{
+  width: 100%;
+  max-width: 1280px;
+  height: 60px;
+  background-color: #098e3e;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top:0;
+  z-index: 100;
+}
+
+
+.icon_menu{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+.fa-solid{
+  color:  #041665;
+}
+
+
+.link_menu {
+  display: none;
+  height: 170px;
+}
+
+.link_menu a, .nav_pie a{   /*mismo cursor para el footer*/
+  text-decoration: none;
+  color:  #041665;
+  cursor: url(../assets/imagenes/cursor.png), auto;
+}
+  
+#menu:target .link_menu  {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #098e3e;
+  align-items: stretch;
+  
+
+}
+
+.cerrar {
+  display:none;
+}
+
+#menu:target .cerrar{
+  display:block;
+}
+
+#menu:target .abrir{
+  display:none;
+  
+}
+
+ul {
+  font-size: 1.5rem;
+  text-align: left;
+    
+}
+
+li{
+  border-bottom: 1px solid #041665;
+  border-top: 1px solid #041665;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+
+/*
+.link_menu:hover li {
+  background-color: #041665;
+  color: #defa10;
+  transition-duration: 0.50;
+}  */
+
+.titulo{
+  width: 100%; 
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo */
+  text-align: left;
+  font-size: 2.8rem;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transform: translateX(-50px);
+  padding-left: 60px;
+  color:#041665;
+  filter: drop-shadow(5px 5px 5px #defa10);
+}
+
+.titulo h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color:#041665;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 30px ;
+  filter: drop-shadow(5px 5px 5px #defb08);
+}
+
+.titulo, p{
+  transform: translateX(-50px);
+  text-align: center;
+  padding: 0 5px;
+  transform: translateY(90px);
+
+}
+.texto_presentacion{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#fbfbfb;
+  font-weight: 900;
+}
+
+.texto_presentacion::after{
+  content:url(../assets/imagenes/texto_presentacion_liderazgo.png) ;
+  display:block;
+  padding-top: 150px;
+  color: #041665;
+  filter: drop-shadow(5px 10px 5px #defb08);
+}
+
+.wave{
+  width: 100%;
+  position:relative;
+  bottom: 8px;
+
+}
+/*main -  section*/
+
+.contenedor_uno{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 0;
+  opacity: 0.9;
+  background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(225deg, #444df77c 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 52px 52px, linear-gradient(45deg, #444cf7 25%, #041665 25%) 0px 0/ 52px 52px;
+  
+}
+.contenido1{
+  width: 100%;
+  height: 250px;
+  position: relative;
+  left: 45px;
+  top: 28px;
+} 
+
+.contenido2{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+
+ .contenido1 video{
+  width: 80%;
+  border-radius: 5px;
+  height: 220px;
+  object-fit: cover;
+  
+}
+
+/*imagen sobre video*/
+
+.img_superpuesta{
+  width: 90px;
+  height: 80px;
+  position: absolute;
+  top: 80px;
+  left: 130px;
+}
+
+
+ .contenido2 h3{
+  width: 80%;
+  background: #e8e8e8c5;
+  border-radius: 5px;
+  color:#736b6b;
+  padding: 10px;
+  font-size: 1rem;
+ }
+
+/*section patos, dedicado al profe Juli*/
+
+.animacion_patos{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.contenedor_pato {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+}
+/*contenedor vacio para generar espacio entre contenedore*/
+.texto_nulo_imagen{
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+}
+/*.texto_nulo_imagen h1 {
+  color: #fff transparent;
+  margin: 0;
+}*/
+.contenedor_pato:hover .texto_nulo_imagen{
+  transform: translateX(-100%);
+  transition: 5s all;
+  
+}
+
+ /*   section de las card*/
+
+ .contenedor_tarjetas{
+   width: 100%;
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   background: #e8e8e8c5;
+ }
+
+ .contenedor_software, .uno {
+  width: 100%;
+  height: 200px;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.icono_texto{
+  width: 100%;
+  display: flex;
+  margin: auto;
+  position:relative;
+
+}
+
+.icono_texto img{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: 40px;
+
+}
+.contenedor_software h2{
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.contenedor_software p{
+  font-size: 18px;
+  margin-top: -80px;
+  color:#877d7d;
+  text-align: justify;
+}
+
+/*************************** footer  ***********************************/
+
+.pie{
+  width: 100vw;
+  height: 400px;
+  background-color: #2a2c2e;
+ 
+}
+.contenedor_pie{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.contenedor_nav_cont{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.caja_navegacion, .caja_contacto{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.nav_titulo h3, .cont_titulo h3 {
+ width: 100%;
+ height: 30px;
+ font-size: 1.6rem;
+ color: white;
+ 
+}
+
+.nav_pie{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.contacto{
+  width: 90%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+
+}
+.ubicacion{
+  width: 100%;
+  height: 100px;
+}
+.ubicacion img{
+  width: 50%;
+  position:relative;
+  top: 10px;
+  left: 25px;
+
+}
+
+.nav_pie a , .contacto a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+.contacto a{
+  width: 90%;
+  height: 150px;
+  margin-top: 90px;
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: #098e3e;
+  border-radius: 5px;
+}
+
+.contenedor_redes{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+.sociales_pie{
+  width: 80%;
+  height: 40%;
+  display: flex;
+  border-radius: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #e8e8e8c5;
+
+}
+.sociales_pie a{
+color: white;
+font-size: 2rem;
+}
+ 
+.titulo_pie {
+  width: 100%;
+  height: 70%;
+  padding-top: 40px;
+}
+.titulo_pie h2{
+  text-align: center;
+}
+
+
+/**********media queries 320px*********/
+/************************************/
+
+@media screen and (max-width: 320px) {
+  h1{
+    font-size: 2rem;
+  }
+
+  .titulo h2{
+    font-size: 1.5rem;
+}
+
+.texto_presentacion::after{
+  padding-top: 150px;
+}
+
+.wave{
+  width: 100%;
+  position:relative;
+  top: 46px;
+}
+.contenido1{
+  left: 35px;
+}
+.img_superpuesta{
+  width: 80px;
+  height: 70px;
+  top: 70px;
+  left: 90px;
+}
+.contenido2{
+  padding-left: 5px;
+}
+.contenido2 h3{
+  font-size: 0.9rem;
+  height: 90px;
+}
+
+.animacion_patos, .contenedor_pato img{
+  height: 40px;
+ 
+}
+.contenedor_software h2{
+  font-size: 1.5rem;
+}
+.contenedor_software p{
+  font-size: 0.9rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.icono_texto img {
+  width: 35px;
+  height: 35px;
+}
+
+.caja_navegacion, .caja_contacto{
+  padding-left: 8px;
+}
+
+.nav_titulo h3, .cont_titulo h3 {
+  font-size: 1.3rem;
+  
+}
+
+.nav_pie a, .contacto a {
+  font-size: 1.1rem;
+  
+}
+
+
+.sociales_pie{
+  height: 60%;
+  display: flex;
+}
+
+.titulo_pie h2{
+  text-align: center;
+  margin-left: 30px;
+  font-size: 2rem;
+
+}
+}
+
+
+/************** QUIENES_SOMOS.HTML*************************/
+/****************************************************/
+/*SE COMPARTEN ALGUNOS ESTILOS*/
+
+/*****************QUE_HACEMOS.HTML*********/
+/***************************************/
+/*****************SUMATE.HTML*************/
+/**********************************************/
+
+
+
+.contenedor_somos, .que_hacemos,.contenedor_sumate{
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.tarjetas_somos, .tarjetas_hacemos{
+  width: 80%;
+  height: 90%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background:linear-gradient(45deg, #85ffbef0 0%, #fffb7dfc 100%);
+  padding-top: 5px;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  margin-left: 25px;
+  box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.286);
+  border-radius: 10%;
+  gap:10px
+}
+
+  
+.item_software, .item_responsive, .item_seo, .item_objetivo, .item_metodologia, .item_desarrollo, .item_mantenimiento{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url(../assets/imagenes/fondo_tarjetas_somos.png);
+  background-attachment:fixed;
+  background-position:center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.item_software h3, .item_responsive h3, .item_seo h3, .item_objetivo h3, .item_metodologia h3, .item_desarrollo h3, .item_mantenimiento h3{
+  height:30px;
+  font-size: 1.5rem;
+  color:#041665;
+  margin-top: 20px;
+  text-align: center
+}
+
+.item_software p, .item_responsive p, .item_seo p, .titulo_hacemos p, .item_objetivo p, .item_metodologia p, .item_desarrollo p, .item_mantenimiento p{
+  padding-bottom: 0px;
+  font-size: 1rem;
+  color:#877d7d;
+  text-align: justify;
+}
+
+/*****************QUE_HACEMOS.HTML*********/
+/***************************************/
+
+.titulo_hacemos {
+  width: 100%;
+  height: 350px; 
+  display: flex;
+  flex-wrap:nowrap;
+  flex-direction: row;
+
+}
+ .titulo_hacemos h1, .titulo_sumate h1{
+  align-self: center;
+ }
+
+
+
+
+
+/**********media queries 320px*********/
+/************************************/
+
+@media screen and (max-width: 320px) {
+  .tarjetas_somos{
+    height: 80%;
+}
+.item_software h3, .item_responsive h3, .item_seo h3{
+  height: 20px;
+  font-size: 1.4rem;
+ 
+}
+
+.item_software p, .item_responsive p, .item_seo p{
+
+  font-size: 0.9rem;
+}
+}
+
+
+/*********** SUMATE.HTML***************/
+.contenedor_sumate{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../assets/imagenes/backg_sumate1.png);
+    background-repeat: no-repeat;
+}
+  
+
+.titulo_sumate h3{
+  height:30px;
+  font-size: 1.5rem;
+  color:#041665;
+  margin-top: 20px;
+  text-align: center
+}
+.contacto_sumate{
+  width: 100%;
+}
+
+.contacto a {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 90px;
+  margin-left: 30px;
+  
+}  
