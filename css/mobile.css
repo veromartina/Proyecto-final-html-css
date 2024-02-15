@@ -7,29 +7,32 @@
 
 /* header*/
 /*imagen generada con leonardo IA*/
-
+html{
+  width: 100vw;
+}
 body{
   background-color: #e8e8e8c5;
-  width: 100%;
+  overflow-x: auto;
 
 }
 
 .hero{
-  width: 100%;
-  max-width: 1280vw;
-  height: 180vh;
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
   background-image: linear-gradient(45deg, #85ffbe75 0%, #fffb7d6a 100%)
   , url(../assets/imagenes/trabajando.jpg);
   background-size: cover;
   background-position:center;
   background-attachment: fixed;
-  position:relative;
+  
 }
 
 /*header logo*/
 
 .logo{
-  width: 50%;
+  width: 40%;
   height: 94%;
   display: flex;
   align-items: center;
@@ -45,13 +48,13 @@ body{
 
 /*header- nav*/
 
-#menu{
-  width: 100%;
-  max-width: 1280px;
+#menu {
+  width: 100vw;
   height: 60px;
   background-color: #098e3e;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: fixed;
   top:0;
   z-index: 100;
@@ -59,7 +62,7 @@ body{
 
 
 .icon_menu{
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -219,8 +222,9 @@ h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo 
 
 .wave{
   width: 100%;
-  position:relative;
-  bottom: 8px;
+  height: 100%;
+  position:absolute;
+  top: 680px;
 
 }
 /*main -  section*/
@@ -269,7 +273,7 @@ h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo 
   height: 80px;
   position: absolute;
   top: 80px;
-  left: 130px;
+  left: 140px;
 }
 
 
@@ -374,7 +378,8 @@ h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo 
 
 .pie{
   width: 100vw;
-  height: 400px;
+  height: 500px;
+  display: flex;
   background-color: #2a2c2e;
  
 }
@@ -400,13 +405,13 @@ h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo 
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 .nav_titulo h3, .cont_titulo h3 {
  width: 100%;
  height: 30px;
- font-size: 1.6rem;
+ font-size: 1.5rem;
  color: white;
  
 }
@@ -419,17 +424,24 @@ h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo 
   justify-content: space-around;
 }
 
-
 .contacto{
-  width: 90%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-
+ display: flex;
+ width: 80%;
+ height: 40px;
+ margin-top: 10px;
+ padding-top: 5px;
+ padding-left: 25px;
+ background-color: #098e3e;
+ border-radius: 10px;
+ 
 }
+
+.contacto a{
+  width: 80%;
+}
+
 .ubicacion{
-  width: 100%;
+  width: 90%;
   height: 100px;
 }
 .ubicacion img{
@@ -442,25 +454,16 @@ h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo 
 
 .nav_pie a , .contacto a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
-}
-.contacto a{
-  width: 90%;
-  height: 150px;
-  margin-top: 90px;
-  padding-left: 30px;
-  padding-top: 10px;
-  background-color: #098e3e;
-  border-radius: 5px;
 }
 
 .contenedor_redes{
   width: 100%;
-  height: 200px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-content: center;
   justify-content: center;
 }
 
@@ -480,15 +483,12 @@ color: white;
 font-size: 2rem;
 }
  
-.titulo_pie {
+.titulo_pie h2 {
   width: 100%;
-  height: 70%;
-  padding-top: 40px;
-}
-.titulo_pie h2{
+  height: 20%;
+  padding-top: 10px;
   text-align: center;
 }
-
 
 /**********media queries 320px*********/
 /************************************/
@@ -498,7 +498,7 @@ font-size: 2rem;
     font-size: 2rem;
   }
 
-  .titulo h2{
+  .titulo h2, .titulo_pie h2{
     font-size: 1.5rem;
 }
 
@@ -546,7 +546,7 @@ font-size: 2rem;
 }
 
 .caja_navegacion, .caja_contacto{
-  padding-left: 8px;
+  padding-left: 1px;
 }
 
 .nav_titulo h3, .cont_titulo h3 {
@@ -555,22 +555,14 @@ font-size: 2rem;
 }
 
 .nav_pie a, .contacto a {
-  font-size: 1.1rem;
-  
+  font-size: 1rem; 
 }
-
 
 .sociales_pie{
   height: 60%;
   display: flex;
 }
 
-.titulo_pie h2{
-  text-align: center;
-  margin-left: 30px;
-  font-size: 2rem;
-
-}
 }
 
 
@@ -702,17 +694,6 @@ font-size: 2rem;
 .contacto_sumate{
   width: 100%;
 }
-
-.contacto a {
-  width: 90%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  padding-left: 90px;
-  margin-left: 30px;
-  
-}  
 
 
 /*********************UBICACION.HTML*************/
