@@ -9,6 +9,14 @@
   list-style: none;
   box-sizing: border-box;
 }
+.button, .input,.textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.

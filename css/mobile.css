@@ -11,7 +11,7 @@ html{
   width: 100%;
 }
 body{
-  background-color: #e8e8e8c5;
+  background-color: #d8d7d7c5;
   overflow-x: auto;
 
 }
@@ -79,8 +79,10 @@ body{
 
 .link_menu {
   display: none;
-  height: 170px;
+  height: 150px;
+  text-align:left;
 }
+
 
 .link_menu a, .nav_pie a{   /*mismo cursor para el footer*/
   text-decoration: none;
@@ -92,9 +94,8 @@ body{
   width: 200px;
   display: flex;
   flex-direction: column;
-  background-color: #098e3e;
+  background-color: #098e3eb6;
   align-items: stretch;
-  
 
 }
 
@@ -113,26 +114,17 @@ body{
 
 ul {
   font-size: 1.5rem;
-  text-align: left;
-    
 }
 
 li{
   border-bottom: 1px solid #041665;
   border-top: 1px solid #041665;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-  
+  height: 50px;
 
-/*
-.link_menu:hover li {
-  background-color: #041665;
-  color: #defa10;
-  transition-duration: 0.50;
-}  */
+}
 
 .titulo{
   width: 100%; 
@@ -329,19 +321,22 @@ h1{
  .contenedor_tarjetas{
    width: 100%;
    display:flex;
-   flex-wrap: wrap;
    flex-direction: column;
    margin-top: 30px;
    margin-bottom: 30px;
    background: #e8e8e8c5;
  }
 
- .contenedor_software, .uno {
+ .contenedor_software{
+  border: 5px solid #041665;
+ }
+
+ .contenedor_software{
   width: 100%;
-  height: 200px;
-  max-width: 350px;
-  margin: auto;
+  height: 300px;
   text-align: center;
+  padding: 50px;
+  background: linear-gradient(45deg, #85ffbe99 0%, #fffb7dbf 100%);
 
 }
 
@@ -376,9 +371,10 @@ h1{
 /*************************** footer  ***********************************/
 
 .pie{
-  width: 100vw;
+  width: 100%;
   height: 500px;
   display: flex;
+  justify-content: space-evenly;
   background-color: #2a2c2e;
  
 }
@@ -450,7 +446,6 @@ h1{
   left: 25px;
 
 }
-
 .nav_pie a , .contacto a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -505,6 +500,10 @@ font-size: 2rem;
 
 @media screen and (min-width: 320px) {
  
+  .logo img {
+    position: relative;
+    width: 80%;
+}  
   h1{
     font-size: 2rem;
   }
@@ -597,6 +596,11 @@ font-size: 2rem;
 
 /**************media queries 425px***********/
 /***********************************************/
+@media screen and (min-width: 320px){
+  .logo img {
+    width: 60%;
+}  
+
 .pie{
   height: 400px;
 }
@@ -614,6 +618,7 @@ font-size: 2rem;
 .titulo_pie h2{
  font-size: 2rem;
 }
+}
 
 /************** QUIENES_SOMOS.HTML*************************/
 /****************************************************/
@@ -628,7 +633,6 @@ font-size: 2rem;
 
 .contenedor_somos, .que_hacemos,.contenedor_sumate{
   width: 100%;
-  height: 1200px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -686,10 +690,9 @@ font-size: 2rem;
 
 .titulo_hacemos {
   width: 100%;
-  height: 350px; 
+  height: 450px; 
   display: flex;
-  flex-wrap:nowrap;
-  flex-direction: row;
+  flex-direction: column;
 
 }
  .titulo_hacemos h1, .titulo_sumate h1{
@@ -723,26 +726,83 @@ font-size: 2rem;
 /*********** SUMATE.HTML***************/
 .contenedor_sumate{
     width: 100%;
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+   
     align-items: center;
     background-image: url(../assets/imagenes/backg_sumate1.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    
 }
-  
+.titulo_sumate{
+  margin-top: 30px;
+  height: 100px;
+
+}
 
 .titulo_sumate h3{
-  height:30px;
+  height: 100px;
   font-size: 1.5rem;
   color:#041665;
-  margin-top: 20px;
   text-align: center
 }
-.contacto_sumate{
-  width: 100%;
+
+
+.formulario_sumate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(45deg, #85ffbebe 0%, #fffb7de1 100%);
+  padding: 5px;
 }
+
+.formulario_sumate h2{
+  color:#041665;
+}
+
+.formulario{ 
+
+  width: 85dvw;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+
+
+.form__label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
+
+.form__input {
+  height: 5dvh;
+  margin-bottom: 10px;
+  color:#736b6b;
+}
+
+.form__textarea {
+  resize: none;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.form__button {
+  width: 25dvw;
+  height: 5dvh;
+  background-color:#098e3e;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+
 
 
 /*********************UBICACION.HTML*************/
