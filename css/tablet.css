@@ -1,110 +1,116 @@
-.hero{
- height: 1000px;
-}
-
-.logo img{
- right: 100px;
-}
-.icon_menu{
-  display: none;
-}
-#menu{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.link_menu  {
-  height: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: 10px;
-}
-
-.link_menu a{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 900;
-  font-size: 1.3rem;
-}
-
-
-#menu:target .link_menu {
-  width: 70%;
-}
-
-ul {
-  text-align: center  
-}
-
-li{
-  height: 60px;
-  border-bottom: none;
-  border-top: none;
-  display: flex;
-  gap:20px;
-
-}
-
 
 h1,.titulo_pie h2{  /* idem para usar el titulo en el foter y no repetir codigo */
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .titulo h2{
-  color:#041665;
-  font-size: 35px;
-  text-align: left;
-  padding-left: 50px;
+  font-size: 3rem;
  
 }
 
-.texto_presentacion{
-  font-size: 1.2rem;
-  text-align: justify;
-  padding-left: 18px;
-  padding-right: 18px;
+.titulo p{
+  font-size: 2rem;
 }
+
 .texto_presentacion::after {
-  padding-left: 350px;
+  padding-left: 80px;
+  padding-top: 150px;
 }
 
-
-.wave{
-  top: 1px
-
+.contenedor_uno{
+  height: 650px;
 }
 
 .contenido1{
-  width: 80%;
-  position: relative;
-  left: 65px;
-  top: -8px;
-  border-radius: 10px;
+  height: 300px;
+  bottom: 40px;
+
 } 
 
  .contenido1 video{
-  height: 250px;
+ 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
  }
 
  .img_superpuesta{
-
-  top: 80px;
-  left: 200px;
+  width: 120px;
+  height: 120px;
+  top: 90px;
+  left: 350px;
 }
 
  .contenido2 {
-  width: 80%;
-  height: 80px;
+  width: 100%;
+  height: 150px;
+  top: 100px
  
 }
 .contenido2 h3{
+  width: 90%;
+  height: 90%;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
+.animacion_patos{
+  height: 150px;
+}
+.contenedor_patos{
+  height: 100%;
+}
+.contenedor_pato img {
+  height: 100px;
+}
+
+.contenedor_tarjetas{
+  height: 2000px;
+}
+
+
+.icono_texto img {
+  width: 50px;
+  height: 50px;
+}
+.contenedor_software h2 {
+  font-size: 2rem;
+}
+
+.contenedor_software p {
+  font-size: 1.5rem;
   
+}
+
+.pie{
+  height: 500px;
+}
+.contenedor_nav_cont{
+  height: 300px;
+}
+
+.nav_titulo h3, .cont_titulo h3 {
+  font-size: 2rem;
+}
+
+.nav_pie{
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.nav_pie a, .contacto a {
+  font-size: 1.5rem;
+}
+.contacto{
+  align-items: center;
+  align-content: center;
+  height: 60px;
+
+}
+
+
+.caja_contacto{
+  gap:20px;
+}
 
 /**********QUIENES_SOMOS.HTML*************/
 /****************************************/

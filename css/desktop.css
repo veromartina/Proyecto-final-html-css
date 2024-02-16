@@ -3,15 +3,14 @@
 .texto_presentacion::after {
     padding-left: 450px;
 }
-#wave, .wave{    /*decido sacar wave ya que no logro su posicionamiento con responsive*/
+ /*d#wave, .wave{   ecido sacar wave ya que no logro su posicionamiento con responsive
    display: none;
-}
+}*/
 
 .contenedor_uno{
     height: 600px;
 }
 .contenido1 {
-    left: 97px;
     top: -8px;
     height: 350px;
     
