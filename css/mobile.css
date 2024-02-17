@@ -734,7 +734,7 @@ font-size: 2rem;
     align-items: center;
     background-image: url(../assets/imagenes/backg_sumate1.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     
 }

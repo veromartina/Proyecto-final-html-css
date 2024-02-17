@@ -148,18 +148,22 @@ justify-content: space-around;
     height: 700px;
 }
 .tarjetas_somos{
-    flex-direction: row;
-    height: 400px;
+        flex-direction: row;
+        height: 400px;
+        margin-top: 40px;
 }
 .item_software, .item_responsive, .item_seo{
     margin-top: 25px;
 }
 .tarjeta_hacemos{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    height: 400px;
 }
+
 .item_objetivo, .item_metodologia, .item_desarrollo, .item_mantenimiento{
-    height: 300px;
+    height: 450px;
+
 
 }
 .titulo_hacemos p {
@@ -177,5 +181,8 @@ justify-content: space-around;
     font-size: 2.3rem;
 
 }
+
+/******************responsive 1440px***************/
+
   /***********************************UBICACION.HTML****************************************/
 
