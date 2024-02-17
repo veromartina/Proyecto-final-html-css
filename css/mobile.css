@@ -93,7 +93,7 @@ body{
   text-decoration: none;
   color:  var(--color-principal);
   cursor: url(../assets/imagenes/cursor.png), auto;
-  font-family: var(font-titulos-h);
+  font-family: var(font-titulos);
   font-weight: 400;
 }
 
@@ -142,6 +142,7 @@ li{
   flex-direction: column;
 
 }
+/**********************ANIMACION DEL H1 ****************************/
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -190,7 +191,7 @@ h1{
 }
 
 .titulo h2{
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-titulos);
   font-weight: 900;
   font-style: normal;
   color: var(--color-principal);
@@ -208,7 +209,7 @@ h1{
 
 }
 .texto_presentacion{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-parrafos);
   color: var(--color-parrafo-hero);
   font-weight: 900;
   font-size: 1.2rem;
@@ -275,6 +276,7 @@ h1{
   color: var(--color-parrafo-hero);
   padding: 10px;
   font-size: 1rem;
+  font-family: var(--font-parrafos);
  }
 
 /*section patos, dedicado al profe Juli*/
@@ -307,10 +309,7 @@ h1{
   flex-direction: row;
   margin-right: 40px;
 }
-/*.texto_nulo_imagen h1 {
-  color: #fff transparent;
-  margin: 0;
-}*/
+
 .contenedor_pato:hover .texto_nulo_imagen{
   transform: translateX(-100%);
   transition: 5s all;
@@ -359,12 +358,15 @@ h1{
 }
 .contenedor_software h2{
   font-size: 2rem;
+  font-family: var(--font-titulos);
   margin-top: 40px;
   color: var(--color-principal)
 }
 
 .contenedor_software p{
   font-size: 1.5rem;
+  font-family: var(--font-parrafos);
+  font-weight: 800;
   margin-top: -80px;
   color:var(--color-parrafos-cont);
   text-align: justify;
@@ -403,22 +405,26 @@ h1{
   display: flex;
   flex-direction: column;
   padding-left: 5px;
+
 }
 
 .nav_titulo h3, .cont_titulo h3 {
  width: 100%;
  height: 30px;
  font-size: 1.5rem;
+ font-family: var(--font-titulos);
  color: var(--color-parrafo-hero);
  
 }
 
 .nav_pie{
-  width: 100%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .contacto{
@@ -451,6 +457,8 @@ h1{
 .nav_pie a , .contacto a {
   text-decoration: none;
   font-size: 1.3rem;
+  font-family: var(--font-parrafos);
+  font-weight: 700;
   color: var(--color-parrafo-hero);
 }
 
@@ -476,6 +484,8 @@ h1{
 }
 .sociales_pie a{
 color: var(--color-parrafo-hero);
+font-family: var(--font-parrafos);
+font-weight: 700;
 font-size: 2rem;
 }
 
@@ -674,6 +684,7 @@ font-size: 2rem;
 .item_software h3, .item_responsive h3, .item_seo h3, .item_objetivo h3, .item_metodologia h3, .item_desarrollo h3, .item_mantenimiento h3, .nuestra_ubicacion h3{ 
   height:30px;
   font-size: 1.5rem;
+  font-family: var(--font-titulos);
   color: var(--color-principal);
   margin-top: 20px;
   text-align: center
@@ -682,6 +693,8 @@ font-size: 2rem;
 .item_software p, .item_responsive p, .item_seo p, .titulo_hacemos p, .item_objetivo p, .item_metodologia p, .item_desarrollo p, .item_mantenimiento p{
   padding-bottom: 0px;
   font-size: 1rem;
+  font-family: var(--font-parrafos);
+  font-weight: 800;
   color: var(--color-parrafos-cont);
   text-align: justify;
 }
@@ -746,6 +759,7 @@ font-size: 2rem;
 .titulo_sumate h3, .texto_ubicacion h3{
   height: 100px;
   font-size: 1.5rem;
+  font-family: var(--font-titulos);
   color:var(--color-principal);
   text-align: center
 }
@@ -762,8 +776,9 @@ font-size: 2rem;
   padding: 5px;
 }
 
-.formulario_sumate h2{
+.formulario_sumate {
   color: var(--color-principal);
+  font-family: var(--font-titulos);
 }
 
 .formulario{ 
@@ -778,6 +793,7 @@ font-size: 2rem;
 
 .form__label {
   font-size: 20px;
+  font-family: var(--font-parrafos);
   margin-bottom: 5px;
   color: var(--color-principal);
 }
@@ -789,23 +805,25 @@ font-size: 2rem;
   margin-bottom: 10px;
   color: var(color-parrafos-cont);
   background-color: var(--color-body);
+  border: none;
 }
 
 .form__textarea {
   resize: none;
   margin-bottom: 10px;
-  color: var(--color-body);
+  background-color: var(--color-body);
 }
 
 .form__button {
   width: 25dvw;
-  height: 5dvh;
+  height: 7dvh;
+  font-family: var(--font-titulos);
   background-color: var(--color-secundario);
   border: none;
   border-radius: 5px;
   align-self: center;
   cursor: pointer;
-  transition: background-color 1s ease;
+  transition: background-color 2s ease;
 }
 
 
@@ -830,19 +848,21 @@ height: 600px;
 .texto_ubicacion h3 {
   width: 100%;
   height: 80px;
+  font-family: var(--font-titulos);
   position: relative;
   top: 50px
 }
 .texto_ubicacion p {
   width: 100%;
   height: 80px;
+  font-family: var(--font-parrafos);
+  font-weight: 800;
   position: relative;
   bottom: 100px;
+  font-size: 1rem;
+  color: var(--color-parrafos-cont);
 }
-.texto_ubicacion{
-font-size: 1rem;
-color: var(--color-parrafos-cont);
-}
+
 
 .texto_ubicacion img{
   width: 100px;
