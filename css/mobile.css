@@ -261,11 +261,11 @@ h1{
 /*imagen sobre video*/
 
 .img_superpuesta{
-  width: 80px;
-  height: 70px;
+  width: 90px;
+  height: 80px;
   position: absolute;
   top: 70px;
- 
+  left: 100px;
 }
 
 
@@ -328,16 +328,12 @@ h1{
  }
 
  .contenedor_software{
-  border: 5px solid var(--color-principal);
- }
-
- .contenedor_software{
   width: 100%;
   height: 300px;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   background: linear-gradient(45deg, #85ffbe99 0%, #fffb7dbf 100%);
-
+  border: 5px solid var(--color-principal);
 }
 
 .icono_texto{
@@ -646,7 +642,6 @@ font-size: 2rem;
   margin-top: 40px;
 }
 
-
 .tarjetas_somos, .tarjetas_hacemos{
   width: 80%;
   display:flex;
@@ -666,7 +661,7 @@ font-size: 2rem;
   
 .item_software, .item_responsive, .item_seo, .item_objetivo, .item_metodologia, .item_desarrollo, .item_mantenimiento{
   width: 100%;
-  height: 320px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -700,7 +695,7 @@ font-size: 2rem;
 
 .titulo_hacemos {
   width: 100%;
-  height: 450px; 
+  height: 350px; 
   display: flex;
   flex-direction: column;
 
