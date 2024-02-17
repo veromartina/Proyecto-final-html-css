@@ -151,7 +151,9 @@ justify-content: space-around;
     flex-direction: row;
     height: 400px;
 }
-
+.item_software, .item_responsive, .item_seo{
+    margin-top: 25px;
+}
 .tarjeta_hacemos{
     flex-direction: row;
     height: 400px;
