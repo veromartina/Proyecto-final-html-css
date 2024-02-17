@@ -127,13 +127,12 @@ justify-content: space-around;
 @media screen and (min-width: 1024px) {
    
     .titulo{
-        height: 100px;
+        height: 200px;
     }
 
-    .titulo p {
-        font-size: 3rem;
+    .texto_presentacion{
+        font-size: 1.5rem;
     }
-
     h1, .titulo_pie h2 {
         font-size: 5rem;
     }
@@ -176,3 +175,5 @@ justify-content: space-around;
     font-size: 2.3rem;
 
 }
+  /***********************************UBICACION.HTML****************************************/
+

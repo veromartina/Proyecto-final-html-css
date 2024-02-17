@@ -18,3 +18,38 @@
 
 
    
+                                                                                
+:root{
+    --color-principal: #041665;
+    --color-secundario: #098e3e;
+    --color-body: #d8d7d7c5;
+    --color-parrafos-cont: #877d7d;
+    --color-pie-cont:#2a2c2e;
+    --color-parrafo-hero: #fbfbfb;
+    --color-fondo-redes:  #e8e8e8c5;
+
+    --font-titulos-h: "Roboto", sans-serif;
+    --font-parrafos: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    
+}
+
+/********animacion de scrol***************************/
+
+::-webkit-scrollbar{
+    width: 30px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-image: url(../assets/imagenes/png_section/uno.png);
+  
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-image: url(../assets/imagenes/cursor.png
+    );
+  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+  
